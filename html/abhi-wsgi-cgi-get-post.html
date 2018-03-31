@@ -1,0 +1,30 @@
+<html>
+ <body>
+   <h1>Index Page</h1>
+   
+   <form method=post action="/wsgiscripts/abhi-wsgi-cgi-get-post.wsgi">
+    <fieldset>
+   <legend>POST FORM</legend>
+   <ul>
+    <li>First Name: <input name='first'></li>
+    <li>Last Name:  <input name='last'></li>
+   </ul>
+   <input type='submit' value='POST'>
+   </fieldset>
+   </form>
+   
+   <form method=get action="/wsgiscripts/abhi-wsgi-cgi-get-post.wsgi">
+   <fieldset>
+   <legend>GET FORM</legend>
+   <ul>
+    <li>First Name: <input name='first'></li>
+    <li>Last Name:  <input name='last'></li>
+   </ul>
+   <input type='submit' value='GET'>
+   </fieldset>
+   </form>
+   
+   <p>%s</p>
+   
+ </body>
+</html>
